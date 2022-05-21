@@ -35,6 +35,11 @@ class Flight implements Comparable<Flight> {
         // Sort flights by date ascending 
         return this.date.compareTo(other.date);
     }
+
+    public boolean equals(Flight other) {
+
+        return (this.flightID == other.flightID);
+    }
 }
 
 class Date implements Comparable<Date> {
