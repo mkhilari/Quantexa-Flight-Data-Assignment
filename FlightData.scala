@@ -26,21 +26,24 @@ object FlightData {
 
     def main(args : Array[String]) = {
 
-        println("Hello, world");
-
+        println(s"Reading $passengerFilename");
         val passengers = getPassengers(passengerFilename);
+
+        println(s"Reading $flightDataFilename");
         val flights = getFlights(flightDataFilename);
         val passengerFlights = getPassengerFlights(flightDataFilename);
 
         val passengerIDNumberOfFlights 
         = getPassengerIDNumberOfFlights(passengerFlights);
 
+        println(s"Solving Question 1");
         val totalFlightsForEachMonth = getTotalFlightsForEachMonth(
         passengers, flights, question1Filename);
 
         outputTotalFlightsForEachMonth(totalFlightsForEachMonth, 
         question1Filename);
 
+        println(s"Solving Question 2");
         val mostFrequentFlyers = getMostFrequentFlyers(
         passengers, flights, passengerIDNumberOfFlights, 100);
 
