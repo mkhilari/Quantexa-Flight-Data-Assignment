@@ -171,7 +171,7 @@ object FlightData {
         => (passengerPair 
             -> passengerIDFlightSet.getOrElse(passengerPair
             .passengerIDA, Set())
-            .union(passengerIDFlightSet.getOrElse(passengerPair
+            .intersect(passengerIDFlightSet.getOrElse(passengerPair
             .passengerIDB, Set()))
         )).toMap
     }

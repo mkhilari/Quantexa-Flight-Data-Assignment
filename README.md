@@ -62,11 +62,13 @@ Answers can also be found in the following folder.
 
 > FlightDataAnswers 
 
-The following question is not complete. 
+The following questions are not complete. 
 
+> Question 4 
+> 
 > Question 5 
 
-The incomplete answer to the above question can be found at the following location. 
+The incomplete answer to the above questions can be found at the following location. 
 
 > FlightData.scala method `getPassengerPairNumberOfFlightsInRange` 
 

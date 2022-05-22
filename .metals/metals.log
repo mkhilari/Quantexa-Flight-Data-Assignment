@@ -14470,3 +14470,4 @@ Exception in thread "pool-3-thread-19" java.lang.InterruptedException
 	at java.base/java.lang.Thread.run(Thread.java:831)
 May 22, 2022 3:17:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 30734
+[0m2022.05.22 17:54:59 WARN  no build target for: /Users/mkhilari/Documents/Scala/Quantexa-Flight-Data-Assignment/FlightData.scala[0m
