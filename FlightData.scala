@@ -305,6 +305,31 @@ object FlightData {
         .sortBy((a, b, numberOfFlights) => numberOfFlights)
     }
 
+    def getPassengerPairNumberOfFlightsInRange(
+    flightMap : Map[Int, Flight], 
+    passengerPairFlights : Map[PassengerPair, Set[Int]], 
+    minSharedFlights : Int, 
+    startDate : Date, endDate : Date) : List[(Int, Int, Int)] = {
+
+        // Returns the number of flights shared by 
+        // each passenger pair within the given date range 
+        // only if > and not = minSharedFlights 
+        // sorted by number of flights shared in descending order 
+
+        passengerPairFlights.toList
+        .map((passengerPair, flights) 
+        => (passengerPair.passengerIDA, 
+        passengerPair.passengerIDB, 
+        flights.map(flightID 
+        => flightMap.getOrElse(flightID, Flight()))
+        .filter(flight 
+        => (flight.date.toDays() >= startDate.toDays() 
+        && flight.date.toDays() <= endDate.toDays()))
+        .size)).filter((a, b, numberOfFlights) 
+        => (numberOfFlights > minSharedFlights))
+        .sortBy((a, b, numberOfFlights) => numberOfFlights)
+    }
+
     def outputPassengerPairNumberOfFlights(
     passengerPairNumberOfFlights : List[(Int, Int, Int)], 
     filename : String) = {

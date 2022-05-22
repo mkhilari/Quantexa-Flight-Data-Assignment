@@ -62,6 +62,14 @@ Answers can also be found in the following folder.
 
 > FlightDataAnswers 
 
+The following question is not complete. 
+
+> Question 5 
+
+The incomplete answer to the above question can be found at the following location. 
+
+> FlightData.scala method `getPassengerPairNumberOfFlightsInRange` 
+
 ## VCS 
 
 VCS files can be found in the following folder. 
