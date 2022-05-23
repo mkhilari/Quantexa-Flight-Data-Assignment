@@ -14471,3 +14471,18 @@ Exception in thread "pool-3-thread-19" java.lang.InterruptedException
 May 22, 2022 3:17:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 30734
 [0m2022.05.22 17:54:59 WARN  no build target for: /Users/mkhilari/Documents/Scala/Quantexa-Flight-Data-Assignment/FlightData.scala[0m
+May 23, 2022 5:56:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30815
+May 23, 2022 5:56:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30817
+May 23, 2022 5:56:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30847
+May 23, 2022 5:58:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 31088
+[0m2022.05.23 18:00:29 WARN  no build target for: /Users/mkhilari/Documents/Scala/Quantexa-Flight-Data-Assignment/FlightData.scala[0m
+[0m2022.05.23 18:01:22 WARN  no build target for: /Users/mkhilari/Documents/Scala/Quantexa-Flight-Data-Assignment/FlightData.scala[0m
+[0m2022.05.23 18:02:29 WARN  no build target for: /Users/mkhilari/Documents/Scala/Quantexa-Flight-Data-Assignment/FlightData.scala[0m
+May 23, 2022 6:03:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 31557
+[0m2022.05.23 18:03:07 WARN  no build target for: /Users/mkhilari/Documents/Scala/Quantexa-Flight-Data-Assignment/FlightData.scala[0m
+[0m2022.05.23 18:03:08 WARN  no build target for: /Users/mkhilari/Documents/Scala/Quantexa-Flight-Data-Assignment/FlightData.scala[0m

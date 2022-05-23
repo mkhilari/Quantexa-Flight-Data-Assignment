@@ -10,7 +10,11 @@ Date: 22 May 2022
 
 ## Introduction 
 
-Welcome to Flight Data. 
+Welcome to the Quantexa Flight Data Assignment. 
+
+The assignment specification can be found at the following location. 
+
+> Flight Data Coding Assignment - Instructions.docx 
 
 Solution details and setup instructions can be found below. 
 
@@ -26,7 +30,7 @@ Developed with Visual Studio Code `1.55.0` and Scala code runner `3.1.2`.
 
 ## Java Solution 
 
-A Java solution can also be found at 
+A Java solution can also be found at the following location. 
 
 > FlightData.java 
 
@@ -35,6 +39,8 @@ The Java solution is written in an object oriented style.
 Developed with Visual Studio Code `1.55.0` and Java code runner `16.0.1`. 
 
 ## Setup Instructions 
+
+Setup instructions can be found below. 
 
 1. Install the latest version of Scala. Installation instructions can be found at [Scala Documentation: Getting Started](https://docs.scala-lang.org/getting-started/index.html). 
 

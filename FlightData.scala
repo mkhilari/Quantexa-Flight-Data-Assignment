@@ -70,7 +70,8 @@ object FlightData {
         val passengerPairFlights = getPassengerPairFlights(
         passengerPairs, passengerIDFlights);
         val passengerPairNumberOfFlights 
-        = getPassengerPairNumberOfFlights(passengerPairFlights, 3);
+        = getPassengerPairNumberOfFlights(flights, 
+        passengerPairFlights, 3);
 
         outputPassengerPairNumberOfFlights(passengerPairNumberOfFlights, 
         question4Filename);
@@ -289,6 +290,7 @@ object FlightData {
     }
 
     def getPassengerPairNumberOfFlights(
+    flightMap : Map[Int, Flight], 
     passengerPairFlights : Map[PassengerPair, Set[Int]], 
     minSharedFlights : Int) : List[(Int, Int, Int)] = {
 
@@ -296,13 +298,11 @@ object FlightData {
         // each passenger pair only if > and not = minSharedFlights 
         // sorted by number of flights shared in descending order 
 
-        passengerPairFlights.toList
-        .map((passengerPair, flights) 
-        => (passengerPair.passengerIDA, 
-        passengerPair.passengerIDB, flights.size))
-        .filter((a, b, numberOfFlights) 
-        => (numberOfFlights > minSharedFlights))
-        .sortBy((a, b, numberOfFlights) => numberOfFlights)
+        val maxYear = 3000 
+
+        getPassengerPairNumberOfFlightsInRange(flightMap, 
+        passengerPairFlights, minSharedFlights, 
+        Date(), Date(maxYear)) 
     }
 
     def getPassengerPairNumberOfFlightsInRange(
@@ -315,6 +315,9 @@ object FlightData {
         // each passenger pair within the given date range 
         // only if > and not = minSharedFlights 
         // sorted by number of flights shared in descending order 
+
+        // Note: Only passengers who have travelled on > 
+        // and not = minSharedFlights are valid candidates 
 
         passengerPairFlights.toList
         .map((passengerPair, flights) 
